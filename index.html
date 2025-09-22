@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+
+    <link rel="shortcut icon" href="asserts/logo1ico.ico" type="image/x-icon" />
+
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mobile.css" />
+    <title>XENDev Fashions</title>
+  </head>
+  <body>
+    <!--header-->
+    <header>
+      <div class="primaryheader">
+        <div class="brand">
+          <!-- brand -->
+          <img src="asserts/logo1wob.png" alt="logo" />
+          <h1><span style="color: rgb(255, 150, 0)">Xen</span>Dev</h1>
+        </div>
+        <div class="search">
+          <input type="text" placeholder="Search..." />
+          <button>
+            <i class="fa-solid fa-magnifying-glass" style="color: #ffffff"></i>
+          </button>
+        </div>
+        <div class="navicos">
+          <button>
+            <div class="btn mob-btn">
+              <i class="fa-solid fa-heart fa-xl" style="color: #ffffff"></i>
+              <p>Wishlist</p>
+            </div>
+          </button>
+          <button>
+            <div class="btn mob-btn">
+              <i
+                class="fa-solid fa-cart-shopping fa-xl"
+                style="color: #ffffff"
+              ></i>
+              <p>Cart</p>
+            </div>
+          </button>
+          <button>
+            <div class="btn">
+              <i class="fa-solid fa-user fa-xl" style="color: #ffffff"></i>
+              <p>Account</p>
+            </div>
+          </button>
+        </div>
+      </div>
+      <div class="search-mob">
+        <input type="text" placeholder="Search..." />
+        <button>
+          <i class="fa-solid fa-magnifying-glass" style="color: #ffffff"></i>
+        </button>
+      </div>
+      <div class="secondaryheader">
+        <ul>
+          <li><a href="">Footware</a></li>
+          <li><a href="">Watch</a></li>
+          <li><a href="">Glasses</a></li>
+          <li><a href="">Accesories</a></li>
+          <li><a href="">Belts</a></li>
+          <li><a href="">Wallets</a></li>
+        </ul>
+      </div>
+      <!--MObie secondary header-->
+      <!-- Hamburger and Side Nav -->
+      <input type="checkbox" id="menu-toggle" />
+      <label for="menu-toggle" class="hamburger">&#9776;</label>
+
+      <nav class="side-nav">
+        <ul>
+          <li class="side-nav-btn">
+            <button>
+              <div class="btnmob">
+                <i class="fa-solid fa-heart fa-xl" style="color: #ffffff"></i>
+                <p>Wishlist</p>
+              </div>
+            </button>
+            <button>
+              <div class="btnmob">
+                <i
+                  class="fa-solid fa-cart-shopping fa-xl"
+                  style="color: #ffffff"
+                ></i>
+                <p>Cart</p>
+              </div>
+            </button>
+          </li>
+          <li><a href="#">Footware</a></li>
+          <li><a href="#">Watch</a></li>
+          <li><a href="#">Glasses</a></li>
+          <li><a href="#">Accessories</a></li>
+          <li><a href="#">Belts</a></li>
+          <li><a href="#">Wallets</a></li>
+        </ul>
+      </nav>
+      <label for="menu-toggle" class="overlay"></label>
+    </header>
+    <section class="carousel"></section>
+    <script src="script.js"></script>
+  </body>
+</html>
