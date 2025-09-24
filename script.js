@@ -49,3 +49,21 @@ function resetInterval() {
   clearInterval(slideInterval);
   slideInterval = setInterval(nextSlide, 4000);
 }
+
+const container = document.querySelector(".shoe-carousel-container");
+const sprevBtn = document.querySelector(".shoe-carousel-btn.prev");
+const snextBtn = document.querySelector(".shoe-carousel-btn.next");
+
+// get one card width (includes margin if any)
+const card = document.querySelector(".shoe-card");
+const cardWidth = card.offsetWidth + 20; // add gap if you set margin
+
+// Next button
+snextBtn.addEventListener("click", () => {
+  container.scrollBy({ left: cardWidth, behavior: "smooth" });
+});
+
+// Prev button
+sprevBtn.addEventListener("click", () => {
+  container.scrollBy({ left: -cardWidth, behavior: "smooth" });
+});
