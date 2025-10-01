@@ -434,7 +434,7 @@ header {
 
 .sample {
   width: 100%;
-  height: 600vh;
+  height: 100vh;
   color: var(--neutral-color);
   display: flex;
   flex-direction: column;
