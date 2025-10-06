@@ -1,0 +1,94 @@
+:root {
+  --dshadow-s: inset 0 1px 2px #ffffff30, 0 1px 2px #ffffff40,
+    0 2px 4px #ffffff50;
+  --dshadow-m: inset 0 1px 2px #ffffff30, 0 1px 2px #ffffff40,
+    0 4px 8px #ffffff50;
+  --dshadow-l: inset 0 1px 2px #ffffff30, 0 1px 2px #ffffff40,
+    0 8px 16px #ffffff50;
+}
+
+/* each card snaps to center */
+.shoe-card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-width: 300px;
+  aspect-ratio: 2/3;
+  background-color: var(--primary-dark);
+  border-radius: 15px;
+  box-shadow: var(--dshadow-m);
+  flex-shrink: 0;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  scroll-snap-align: center; /* snap to center */
+}
+
+.shoe-card:hover {
+  transform: scale(1.05);
+  box-shadow: var(--dshadow-l);
+}
+
+.shoe-img {
+  aspect-ratio: 1/1;
+  width: 95%;
+  position: absolute;
+  box-shadow: var(--shadow-l);
+  border-radius: 12px;
+  top: 10px;
+}
+
+.description {
+  position: absolute;
+  bottom: 10px;
+  width: 95%;
+  border-radius: 8px;
+  font-weight: bold;
+  color: white;
+  height: 30%;
+}
+.description p {
+  margin: 5px 10px;
+  font-size: 1rem;
+}
+
+.description p:nth-child(2) {
+  font-size: 0.9rem;
+}
+.description p:nth-child(3) {
+  font-size: 0.8rem;
+  font-weight: normal;
+}
+
+.stars {
+  color: gold;
+  margin: 5px 10px;
+}
+
+.highlight {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px 10px;
+  border-radius: 8px;
+  height: 30px;
+}
+.highlight p {
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+.buy-btn {
+  background-color: var(--tertiary-color);
+  border: none;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+.buy-btn:hover {
+  background-color: var(--tertiary-color);
+  box-shadow: var(--shadow-m);
+}
