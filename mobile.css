@@ -142,7 +142,7 @@
   }
   .sample {
     width: 100%;
-    height: 600vh;
+    height: 100vh;
     color: var(--neutral-color);
     display: flex;
     flex-direction: column;
@@ -150,7 +150,19 @@
     align-items: center;
     position: relative;
   }
-  .sample h1 {
+
+  .new {
+    width: 100%;
+    height: 15vh;
+    color: var(--neutral-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+  }
+
+  .new h1 {
     font-size: 1.5rem;
     color: var(--neutral-color);
     font-weight: bold;
@@ -161,7 +173,7 @@
     width: 60%;
   }
 
-  .sample h1::after {
+  .new h1::after {
     content: "";
     position: absolute; /* not display */
     bottom: -10px; /* place it just below text */
@@ -172,7 +184,7 @@
     background-color: var(--primary-color);
     transition: all 0.3s ease-in-out;
   }
-  .sample h1:hover::after {
+  .new h1:hover::after {
     width: 110%;
   } /*carousel*/
   .shoe-carousel {
@@ -190,7 +202,7 @@
     position: absolute;
     top: 2%;
     left: 2%;
-    font-size: 2rem;
+    font-size: 1.5rem;
     color: white;
   }
 

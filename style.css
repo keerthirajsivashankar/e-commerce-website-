@@ -436,7 +436,18 @@ header {
 
 .sample {
   width: 100%;
-  height: 120vh;
+  height: 100vh;
+  color: var(--neutral-color);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  margin-bottom: 20px;
+}
+.new {
+  width: 100%;
+  height: 20vh;
   color: var(--neutral-color);
   display: flex;
   flex-direction: column;
@@ -444,7 +455,7 @@ header {
   align-items: center;
   position: relative;
 }
-.sample h1 {
+.new h1 {
   font-size: 2.5rem;
   margin: 20px 0;
   font-weight: bold;
@@ -454,7 +465,7 @@ header {
   transform: translateX(-50%);
 }
 
-.sample h1::after {
+.new h1::after {
   content: "";
   position: absolute; /* not display */
   bottom: -10px; /* place it just below text */
@@ -465,7 +476,7 @@ header {
   background-color: var(--primary-color);
   transition: all 0.3s ease-in-out;
 }
-.sample h1:hover::after {
+.new h1:hover::after {
   width: 110%;
 }
 
@@ -478,7 +489,6 @@ header {
   overflow: hidden;
   position: absolute;
   background-color: black;
-  top: 20vh;
 }
 .shoe-title {
   position: absolute;
