@@ -131,14 +131,21 @@
   .car-btn {
     background-color: var(--primary-dark);
     border: none;
-    color: aliceblue;
-    width: 20%;
-    height: 15%;
-    border-radius: 30px;
-    position: absolute;
-    bottom: 15%;
-    left: 40%;
+    color: white;
+    padding: 10px 20px;
     font-size: 0.5rem;
+    border-radius: 16px;
+    cursor: pointer;
+    position: absolute;
+    top: 10%;
+    left: 43%;
+    transition: background-color 0.3s ease-in-out;
+    box-shadow: var(--shadow-m);
+  }
+
+  .car-btn:hover {
+    background-color: var(--tertiary-color);
+    box-shadow: var(--shadow-l);
   }
   .sample {
     width: 100%;

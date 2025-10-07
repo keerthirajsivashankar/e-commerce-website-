@@ -102,3 +102,51 @@ gnextBtn.addEventListener("click", () => {
 gprevBtn.addEventListener("click", () => {
   gcontainer.scrollBy({ left: -gcardWidth, behavior: "smooth" });
 });
+
+// belt carousel functionality
+const bcontainer = document.querySelector(".belt-carousel-container");
+const bprevBtn = document.querySelector(".belt-carousel-btn.prev");
+const bnextBtn = document.querySelector(".belt-carousel-btn.next");
+// get one card width (includes margin if any)
+const bcard = document.querySelector(".shoe-card");
+const bcardWidth = bcard.offsetWidth + 20; // add gap if you set margin
+// Next button
+bnextBtn.addEventListener("click", () => {
+  bcontainer.scrollBy({ left: bcardWidth, behavior: "smooth" });
+});
+// Prev button
+bprevBtn.addEventListener("click", () => {
+  bcontainer.scrollBy({ left: -bcardWidth, behavior: "smooth" });
+});
+
+// wallet carousel functionality
+const wltcontainer = document.querySelector(".wallet-carousel-container");
+const wltprevBtn = document.querySelector(".wallet-carousel-btn.prev");
+const wltnextBtn = document.querySelector(".wallet-carousel-btn.next");
+// get one card width (includes margin if any)
+const wltcard = document.querySelector(".shoe-card");
+const wltcardWidth = wltcard.offsetWidth + 20;
+// Next button
+wltnextBtn.addEventListener("click", () => {
+  wltcontainer.scrollBy({ left: wltcardWidth, behavior: "smooth" });
+});
+// Prev button
+wltprevBtn.addEventListener("click", () => {
+  wltcontainer.scrollBy({ left: -wltcardWidth, behavior: "smooth" });
+});
+
+//ring carousel functionality
+const rcontainer = document.querySelector(".ring-carousel-container");
+const rprevBtn = document.querySelector(".ring-carousel-btn.prev");
+const rnextBtn = document.querySelector(".ring-carousel-btn.next");
+// get one card width (includes margin if any)
+const rcard = document.querySelector(".shoe-card");
+const rcardWidth = rcard.offsetWidth + 20;
+// Next button
+rnextBtn.addEventListener("click", () => {
+  rcontainer.scrollBy({ left: rcardWidth, behavior: "smooth" });
+});
+// Prev button
+rprevBtn.addEventListener("click", () => {
+  rcontainer.scrollBy({ left: -rcardWidth, behavior: "smooth" });
+});
